@@ -1,10 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Custom base styles */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
+  background-color: rgb(248 250 252); /* bg-slate-50 */
+  color: rgb(15 23 42); /* text-slate-900 */
 }
