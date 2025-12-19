@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; // CRITICAL: This links your Tailwind styles
+import './index.css'; 
 import App from './App';
 
 const rootElement = document.getElementById('root');
-if (!rootElement) throw new Error("Could not find root element");
+if (!rootElement) throw new Error("Root element not found");
 
-const root = ReactDOM.createRoot(rootElement);
-root.render(
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
