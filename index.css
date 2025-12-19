@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Optional: Global resets or fonts */
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
