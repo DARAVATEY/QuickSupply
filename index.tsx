@@ -1,12 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; // Add this line to load Tailwind styles
+import './index.css'; // CRITICAL: This links your Tailwind styles
 import App from './App';
 
 const rootElement = document.getElementById('root');
-if (!rootElement) {
-  throw new Error("Could not find root element to mount to");
-}
+if (!rootElement) throw new Error("Could not find root element");
 
 const root = ReactDOM.createRoot(rootElement);
 root.render(
