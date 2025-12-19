@@ -5,15 +5,15 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
-# Add these lines to capture secrets during build
+# Capture secrets as build arguments
 ARG VITE_SUPABASE_URL
 ARG VITE_SUPABASE_ANON_KEY
-ARG GEMINI_API_KEY
+ARG VITE_GEMINI_API_KEY
 
-# Set them as ENV so Vite can see them
+# Set them as ENV for Vite to use during build
 ENV VITE_SUPABASE_URL=$VITE_SUPABASE_URL
 ENV VITE_SUPABASE_ANON_KEY=$VITE_SUPABASE_ANON_KEY
-ENV GEMINI_API_KEY=$GEMINI_API_KEY
+ENV VITE_GEMINI_API_KEY=$VITE_GEMINI_API_KEY
 
 RUN npm run build
 
