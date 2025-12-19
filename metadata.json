@@ -1,0 +1,7 @@
+{
+  "name": "QuickSupply",
+  "description": "An AI-powered B2B platform connecting buyers with reliable Cambodian suppliers across diverse industries including garments, agriculture, and handicrafts.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
